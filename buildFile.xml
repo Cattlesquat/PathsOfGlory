@@ -14,7 +14,7 @@
         <entry>Solitaire</entry>
     </VASSAL.build.module.PlayerRoster>
     <VASSAL.build.module.GlobalOptions autoReport="Always" centerOnMove="Use Preferences Setting" chatterHTMLSupport="Always" nonOwnerUnmaskable="Never" playerIdFormat="&amp;lt;$PlayerName$ ($PlayerSide$)&amp;gt;" promptString="Opponents can unmask my pieces">
-        <VASSAL.preferences.BooleanPreference default="false" desc="Automatically place Missed MO markers when turn advanced." name="AutoMissedMO" tab="Paths of Glory"/>
+        <VASSAL.preferences.BooleanPreference default="false" desc="Automatically place Missed MO markers when advancing the turn." name="AutoMissedMO" tab="Paths of Glory"/>
         <option name="stepIcon">go-next.png</option>
         <option name="stepHotKey">34,0</option>
         <option name="undoIcon">edit-undo.png</option>
@@ -4067,9 +4067,9 @@
         </VASSAL.build.module.SpecialDie>
     </VASSAL.build.module.SpecialDiceButton>
     <VASSAL.build.module.PredefinedSetup isMenu="true" name="Scenarios" useFile="true">
-        <VASSAL.build.module.PredefinedSetup file="DeluxeHistorical10-1.vsav" isMenu="false" name="Deluxe Map - Historical Scenario" useFile="true"/>
-        <VASSAL.build.module.PredefinedSetup file="Historical10-1.vsav" isMenu="false" name="Classic Map - Historical Scenario" useFile="true"/>
-        <VASSAL.build.module.PredefinedSetup file="Classic10-1.vsav" isMenu="false" name="Classic Map - Campaign Scenario" useFile="true"/>
+        <VASSAL.build.module.PredefinedSetup file="DeluxeHistorical10-2.vsav" isMenu="false" name="Deluxe Map - Historical Scenario" useFile="true"/>
+        <VASSAL.build.module.PredefinedSetup file="Historical10-2.vsav" isMenu="false" name="Classic Map - Historical Scenario" useFile="true"/>
+        <VASSAL.build.module.PredefinedSetup file="Classic10-2.vsav" isMenu="false" name="Classic Map - Campaign Scenario" useFile="true"/>
         <VASSAL.build.module.PredefinedSetup isMenu="false" name="Custom Game" useFile="false"/>
     </VASSAL.build.module.PredefinedSetup>
     <VASSAL.i18n.Language/>
