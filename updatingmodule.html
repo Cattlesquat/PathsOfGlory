@@ -12,8 +12,15 @@ body {background: #eeeeee}
 <h2>Tips When Updating Module</h2>
 Vassal Module development is a bit "wild west", in that anyone can jump in and do it, and anyone can upload a new one to the server! So by all means jump in and help! BUT, there are a few "delicate" aspects of updating a Paths of Glory module, and this file lists a few steps that "if followed" will make everyone's life easier. They are also documented here lest we forget them ourselves!    -- Brian Reynolds, 2019
 
-<h2>FIRST AND FOREMOST!</h2>
-Most importantly, the three "Scenario" saves must be created afresh whenever there have been any significant changes to prototypes and internal logic. The "Refresh Counters" function is NOT sufficient, as there are aspects which this cannot touch! Therefore each of the three scenarios must be created again manually - frustrating, but only takes about 5 minutes.
+<h2>Git Repository</h2>
+The current module developers keep a "git repository" for module development. It is presently located at: https://github.com/Cattlesquat/PathsOfGlory.git If you are familiar with git, you can
+clone or fork this repository, which look like an "unzipped" copy of the internals of the .vmod module file, with a batch file (build.bat) which can be used to build an actual .vmod file from
+the current contents. Working in this way will occasionally require extracting "buildFile.xml" and "moduledata" from a copy of the module which you've edited in the VASSAL editor to put back into
+the directory structure. More on git can be found at http://www.vassalengine.org/wiki/Using_Git and https://git-scm.com/book/en/v2  So hopefully you can get in touch with us and contribute directly
+into the community!
+
+<h2>Updating Preset Scenarios</h2>
+The three "Scenario" saves must be created afresh whenever there have been any significant changes to prototypes and internal logic. The "Refresh Counters" function is NOT sufficient, as there are aspects which this cannot touch! Therefore each of the three scenarios must be created again manually - frustrating, but only takes about 5 minutes.
 
 <h2>Step 0 - (Optional-but-Recommended) See if the coast is clear!</h2>
 <ul style="margin-top:-20px;">
@@ -76,8 +83,16 @@ Most importantly, the three "Scenario" saves must be created afresh whenever the
 
 <h2>Step 5 - Save Your Module Out</h2>
 <h2>Step 6 - Test Module Even More ("Just In Case")</h2>
-<h2>Step 7 - Upload to the Paths of Glory Vassal Module page</h2>
-<h2>Step 8 - Relax and Enjoy!</h2>
+
+<h2>Step 7 - Optional But Recommended - Push a PR to the git repository</h2>
+<ul style="margin-top:-20px;">
+  <li>Ensure that the latest "buildFile.xml" and the "moduledata" file have been extracted from your .vmod and into your local git repository</li>
+  <li>"git add *" and "git commit" your changes, and "git push" them to your forked copy of the repository</li>
+  <li>On Github.com go to https://github.com/Cattlesquat/PathsOfGlory.git and create a "Pull Request" of your new changes</li>
+</ul>
+
+<h2>Step 8 - Upload to the Paths of Glory Vassal Module page</h2>
+<h2>Step 9 - Relax and Enjoy!</h2>
 
 </BODY>
 </HTML>
