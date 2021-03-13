@@ -625,6 +625,10 @@
                             <VASSAL.build.module.map.boardPicker.board.Region name="RB_MN(c)" originx="4705" originy="1475"/>
                             <VASSAL.build.module.map.boardPicker.board.Region name="RB_Allied" originx="4929" originy="1419"/>
                             <VASSAL.build.module.map.boardPicker.board.Region name="RB_Allied(c)" originx="4932" originy="1471"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="RB_RUCav" originx="4800" originy="1390"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="RB_RUCav(c)" originx="4800" originy="1475"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="RB_RUCz" originx="4895" originy="1390"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="RB_RUCz(c)" originx="4895" originy="1475"/>
                         </VASSAL.build.module.map.boardPicker.board.RegionGrid>
                     </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
                     <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$gridLocation$" name="AP Eliminated" path="1854,2975;2558,2974;2555,3101;2354,3104;2319,3249;1854,3249" useHighlight="false" useParentGrid="false">
@@ -636,7 +640,8 @@
                             <VASSAL.build.module.map.boardPicker.board.Region name="SB Elim" originx="2196" originy="3205"/>
                             <VASSAL.build.module.map.boardPicker.board.Region name="US Elim" originx="2268" originy="3205"/>
                             <VASSAL.build.module.map.boardPicker.board.Region name="BRMisc Elim" originx="1908" originy="3125"/>
-                            <VASSAL.build.module.map.boardPicker.board.Region name="Allied Elim" originx="1980" originy="3125"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="RUCav Elim" originx="1980" originy="3125"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="Allied Elim" originx="1981" originy="3125"/>
                             <VASSAL.build.module.map.boardPicker.board.Region name="MN Elim" originx="2052" originy="3125"/>
                             <VASSAL.build.module.map.boardPicker.board.Region name="RO Elim" originx="2124" originy="3125"/>
                             <VASSAL.build.module.map.boardPicker.board.Region name="BE Elim" originx="2196" originy="3125"/>
@@ -1194,6 +1199,10 @@
                             <VASSAL.build.module.map.boardPicker.board.Region name="RB_MN(c)" originx="4929" originy="1645"/>
                             <VASSAL.build.module.map.boardPicker.board.Region name="RB_Allied" originx="4375" originy="1571"/>
                             <VASSAL.build.module.map.boardPicker.board.Region name="RB_Allied(c)" originx="4376" originy="1624"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="RB_RUCav" originx="4534" originy="1560"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="RB_RUCav(c)" originx="4534" originy="1645"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="RB_RUCz" originx="4455" originy="1560"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="RB_RUCz(c)" originx="4455" originy="1645"/>
                         </VASSAL.build.module.map.boardPicker.board.RegionGrid>
                     </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
                     <VASSAL.build.module.map.boardPicker.board.mapgrid.Zone highlightProperty="" locationFormat="$gridLocation$" name="AP Eliminated" path="1865,2934;2328,2934;2555,2935;2553,3039;2328,3039;2328,3216;1865,3215" useHighlight="false" useParentGrid="false">
@@ -1205,7 +1214,8 @@
                             <VASSAL.build.module.map.boardPicker.board.Region name="SB Elim" originx="2206" originy="3160"/>
                             <VASSAL.build.module.map.boardPicker.board.Region name="US Elim" originx="2278" originy="3160"/>
                             <VASSAL.build.module.map.boardPicker.board.Region name="BRMisc Elim" originx="1918" originy="3080"/>
-                            <VASSAL.build.module.map.boardPicker.board.Region name="Allied Elim" originx="1990" originy="3080"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="RUCav Elim" originx="1990" originy="3080"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="Allied Elim" originx="1991" originy="3080"/>
                             <VASSAL.build.module.map.boardPicker.board.Region name="MN Elim" originx="2062" originy="3080"/>
                             <VASSAL.build.module.map.boardPicker.board.Region name="RO Elim" originx="2134" originy="3080"/>
                             <VASSAL.build.module.map.boardPicker.board.Region name="BE Elim" originx="2206" originy="3080"/>
@@ -3815,11 +3825,11 @@
             <VASSAL.build.widget.PieceSlot entryName="RUc" gpid="3093" height="64" width="75">+/null/mark;CorpsReinf	prototype;ReinfCorps\	prototype;CorpsRU\\	piece;;;;RUc/RU6	\	\\	null;0;0;3093;0</VASSAL.build.widget.PieceSlot>
         </VASSAL.build.module.map.SetupStack>
         <VASSAL.build.module.map.SetupStack name="RU Czech" owningBoard="AP Forces" useGridLocation="false" x="1056" y="343">
-            <VASSAL.build.widget.PieceSlot entryName="CzLc" gpid="1054" height="64" width="75">+/null/report;63743\,0\,ToRB;CzL Corps added to Allied Reserve Box.;;;	sendto;;63743,0,ToRB;Map;{CurrentBoard};3695;2980;;;;0;0;0;;R;;RU_RB;;\	emb2;Activate;2;;Take Losses;2;;Replace;2;;;;1;false;0;0;czl_corps.png,czl_corps_back.png;CzLc,(CzLc);true;Status;;;true;CounterLayer;1;1;true;65,130;76,130;82,130;\\	prototype;CorpsRU\\\	piece;;;;CzLc/-1	;;\	1\\	\\\	null;0;0;1054;0</VASSAL.build.widget.PieceSlot>
+            <VASSAL.build.widget.PieceSlot entryName="CzLc" gpid="1054" height="64" width="75">+/null/report;63743\,0\,ToRB;CzL Corps added to Allied Reserve Box.;;;	sendto;;63743,0,ToRB;Map;{CurrentBoard};3695;2980;;;;0;0;0;;R;;RU_RB;;\	emb2;Activate;2;;Take Losses;2;;Replace;2;;;;1;false;0;0;czl_corps.png,czl_corps_back.png;CzLc,(CzLc);true;Status;;;true;CounterLayer;1;1;true;65,130;76,130;82,130;\\	mark;ElimSuffix\\\	mark;NationSuffix\\\\	prototype;CorpsRU\\\\\	piece;;;;CzLc/-1	;;\	1\\	Cav\\\	Cz\\\\	\\\\\	null;0;0;1054;0</VASSAL.build.widget.PieceSlot>
         </VASSAL.build.module.map.SetupStack>
         <VASSAL.build.module.map.SetupStack name="RU Exp Corps Cav" owningBoard="AP Forces" useGridLocation="false" x="614" y="343">
-            <VASSAL.build.widget.PieceSlot entryName="RU Cav" gpid="3098" height="64" width="75">+/null/report;63743\,0\,ToRB;RU Cav Corps x2 placed in Russia.;;;	sendto;;63743,0,ToRussia;Map;{CurrentBoard};3695;2980;;;;0;0;0;;R;;Russia;;\	mark;CorpsReinf\\	emb2;Activate;2;;Take Losses;2;;Replace;2;;;;1;false;0;0;ru_cav.png,ru_cav_back.png;RU Cav,(RU Cav);true;Status;;;true;CounterLayer;1;1;true;65,130;76,130;82,130;\\\	prototype;CorpsRU\\\\	piece;;;;RU Cav/-1	;;\	RUCav\\	1\\\	\\\\	null;0;0;3098;0</VASSAL.build.widget.PieceSlot>
-            <VASSAL.build.widget.PieceSlot entryName="RU Cav" gpid="3099" height="64" width="75">+/null/sendto;;63743,0,ToRussia;Map;{CurrentBoard};3695;2980;;;;0;0;0;;R;;Russia;;	mark;CorpsReinf\	emb2;Activate;2;;Take Losses;2;;Replace;2;;;;1;false;0;0;ru_cav.png,ru_cav_back.png;RU Cav,(RU Cav);true;Status;;;true;CounterLayer;1;1;true;65,130;76,130;82,130;\\	prototype;CorpsRU\\\	piece;;;;RU Cav/;;	RUCav\	1\\	\\\	null;0;0;3099;0</VASSAL.build.widget.PieceSlot>
+            <VASSAL.build.widget.PieceSlot entryName="RU Cav" gpid="3098" height="64" width="75">+/null/report;63743\,0\,ToRB;RU Cav Corps x2 placed in Russia.;;;	sendto;;63743,0,ToRussia;Map;{CurrentBoard};3695;2980;;;;0;0;0;;R;;Russia;;\	mark;ElimSuffix\\	mark;NationSuffix\\\	mark;CorpsReinf\\\\	emb2;Activate;2;;Take Losses;2;;Replace;2;;;;1;false;0;0;ru_cav.png,ru_cav_back.png;RU Cav,(RU Cav);true;Status;;;true;CounterLayer;1;1;true;65,130;76,130;82,130;\\\\\	prototype;CorpsRU\\\\\\	piece;;;;RU Cav/-1	;;\	Cav\\	Cav\\\	RUCav\\\\	1\\\\\	\\\\\\	null;0;0;3098;0</VASSAL.build.widget.PieceSlot>
+            <VASSAL.build.widget.PieceSlot entryName="RU Cav" gpid="3099" height="64" width="75">+/null/sendto;;63743,0,ToRussia;Map;{CurrentBoard};3695;2980;;;;0;0;0;;R;;Russia;;	mark;ElimSuffix\	mark;NationSuffix\\	mark;CorpsReinf\\\	emb2;Activate;2;;Take Losses;2;;Replace;2;;;;1;false;0;0;ru_cav.png,ru_cav_back.png;RU Cav,(RU Cav);true;Status;;;true;CounterLayer;1;1;true;65,130;76,130;82,130;\\\\	prototype;CorpsRU\\\\\	piece;;;;RU Cav/;;	Cav\	Cav\\	RUCav\\\	1\\\\	\\\\\	null;0;0;3099;0</VASSAL.build.widget.PieceSlot>
         </VASSAL.build.module.map.SetupStack>
         <VASSAL.build.module.map.SetupStack name="IT5" owningBoard="AP Forces" useGridLocation="false" x="847" y="219">
             <VASSAL.build.widget.PieceSlot entryName="IT5" gpid="429" height="64" width="75">+/null/prototype;NonNEArmy	prototype;ArmyReinf_IT\	prototype;Unit\\	emb2;Activate;2;;Take Losses;2;;Replace;2;;;;1;false;0;0;it_army05.png,it_army05_back.png;IT5,(IT5);true;Status;;;true;CounterLayer;1;1;true;65,130;76,130;82,130;\\\	prototype;ArmyIT\\\\	piece;;;;IT5/	\	\\	1\\\	\\\\	null;0;0;429;0</VASSAL.build.widget.PieceSlot>
@@ -4075,7 +4085,7 @@
         <VASSAL.build.module.PredefinedSetup isMenu="false" name="Custom Game" useFile="false"/>
     </VASSAL.build.module.PredefinedSetup>
     <VASSAL.i18n.Language/>
-    <PathsOfGlory.TurnTracker buttonText="" buttonTooltip="Turn 3" hotkey="85,520" icon="toolbar_turn.png" length="-1" lengthStyle="Maximum" name="Turn" nexthotkey="84,195" prevhotkey="85,195" reportFormat="!&lt;b&gt;$PlayerSide$ advances to $newTurn$.&lt;/b&gt;" tooltip="Right-click to configure" turnFormat="Turn $Turn$">
+    <PathsOfGlory.TurnTracker buttonText="" buttonTooltip="Turn 1" hotkey="85,520" icon="toolbar_turn.png" length="-1" lengthStyle="Maximum" name="Turn" nexthotkey="84,195" prevhotkey="85,195" reportFormat="!&lt;b&gt;$PlayerSide$ advances to $newTurn$.&lt;/b&gt;" tooltip="Right-click to configure" turnFormat="Turn $Turn$">
         <PathsOfGlory.CounterTurnLevel incr="1" loop="true" loopLimit="20" name="Turn" property="Turn" start="1" turnFormat="$value$"/>
         <PathsOfGlory.TurnGlobalHotkey hotkey="35,0" match="" name="Change Turn" reportFormat=""/>
     </PathsOfGlory.TurnTracker>
