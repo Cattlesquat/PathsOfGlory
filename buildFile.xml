@@ -4087,7 +4087,9 @@
         <VASSAL.build.module.PredefinedSetup file="Classic10-2.vsav" isMenu="false" name="Classic Map - Campaign Scenario" useFile="true"/>
         <VASSAL.build.module.PredefinedSetup isMenu="false" name="Custom Game" useFile="false"/>
     </VASSAL.build.module.PredefinedSetup>
-    <VASSAL.i18n.Language/>
+    <VASSAL.i18n.Language>
+      <VASSAL.i18n.Translation locale="es,"/>
+    </VASSAL.i18n.Language>
     <PathsOfGlory.TurnTracker buttonText="" buttonTooltip="Turn 1" hotkey="85,520" icon="toolbar_turn.png" length="-1" lengthStyle="Maximum" name="Turn" nexthotkey="84,195" prevhotkey="85,195" reportFormat="!&lt;b&gt;$PlayerSide$ advances to $newTurn$.&lt;/b&gt;" tooltip="Right-click to configure" turnFormat="Turn $Turn$">
         <PathsOfGlory.CounterTurnLevel incr="1" loop="true" loopLimit="20" name="Turn" property="Turn" start="1" turnFormat="$value$"/>
         <PathsOfGlory.TurnGlobalHotkey hotkey="35,0" match="" name="Change Turn" reportFormat=""/>
