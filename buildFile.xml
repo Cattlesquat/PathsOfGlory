@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<VASSAL.build.GameModule ModuleOther1="0" ModuleOther2="17-Jan-2022" VassalVersion="3.6.4" description="Featuring the Deluxe 2018 edition of Ted Raicer's Card-Driven Strategy Game of WW1" name="Paths of Glory" nextPieceSlotId="5311" version="10.5">
+<VASSAL.build.GameModule ModuleOther1="0" ModuleOther2="17-Jan-2022" VassalVersion="3.6.4" description="Featuring the Deluxe 2018 edition of Ted Raicer's Card-Driven Strategy Game of WW1" name="Paths of Glory" nextPieceSlotId="5327" version="10.5">
     <VASSAL.build.module.BasicCommandEncoder/>
     <VASSAL.build.module.Documentation>
         <VASSAL.build.module.documentation.AboutScreen fileName="cover.jpg" title="About Module"/>
@@ -564,6 +564,11 @@
             <VASSAL.build.module.PrototypeDefinition description="" name="Missed MO Marker">+/null/PROP;NewSemaphore;true,0,1,false;:63743\,0\,NewOn:P\,1,:63743\,0\,NewOff:P\,0;	hideCmd;Already on Turn Track;Disable;{CurrentZone == "Turn Track"};49\,130\	sendto;To Turn Track (Current Turn);49,130;Map;;0;0;;;;0;0;0;;R;;Turn $Turn$;;\\	sendto;To Turn Track (Previous Turn);50,130;Map;;0;0;;;;0;0;0;;R;;{"Turn "+ (Turn - 1)};;\\\	hideCmd;;Disable;CurrentMap="";70\,130\\\\	globalkey;;63743,0,MoveVPMarker;63743,0,MoveVP;{BasicName == "VP"};false;1;false;true;;MoveVPMarker;-1;COUNTER|false|MAP|||||0|0||false|||EQUALS\\\\\	setprop;VP_Net_MOs;true,-1000,1000,false;:63743\,0\,DoubleVPSet:I\,{VPValue*2},:63743\,0\,SingleVPSet:I\,{VPValue},:63743\,0\,SingleVPReset:I\,{VPValue*-1};Set VP_Net_MOs;Current Zone\/Current Map\/Module;\\\\\\	setprop;VP;true,-5,40,false;:63743\,0\,DoubleVPSet:I\,{VPValue*2},:63743\,0\,SingleVPSet:I\,{VPValue},:63743\,0\,SingleVPReset:I\,{VPValue*-1};Set VP;Current Zone\/Current Map\/Module;\\\\\\\	macro;AutoMissedMO - New counter just auto-added during turn advance;;;;63743\,0\,AutoMissedMO;63743\,0\,NewOn,50\,130,63743\,0\,NewOff;false;;;counted;;;;false;;1;1\\\\\\\\	macro;NewMissedMO - New counter just created from one of the MO marker menus;;;;63743\,0\,NewMissedMO;63743\,0\,NewOn,49\,130,63743\,0\,NewOff;false;;;counted;;;;false;;1;1\\\\\\\\\	macro;Flip;Flip (AP\/CP);70,130;;;63743\,0\,FlipCounter,63743\,0\,DoubleVPSet,63743\,0\,MoveVPMarker;false;;;counted;;;;false;;1;1\\\\\\\\\\	macro;CheckReportStateChange;;;CurrentBoard!="";70\,130;63743\,0\,ReportStateChange;false;;;counted;;;;false;;1;1\\\\\\\\\\\	macro;Added to Map;;;{(LocationName!=OldLocationName) &amp;&amp; ((CurrentBoard!=OldBoard) || (NewSemaphore != 0))};63743\,0\,MovedOnMap;63743\,0\,ReportAddedMap,63743\,0\,SingleVPSet,63743\,0\,MoveVPMarker;false;;;counted;;;;false;;1;1\\\\\\\\\\\\	macro;Moved on Map;;;{(LocationName!=OldLocationName) &amp;&amp; (CurrentBoard==OldBoard) &amp;&amp; (NewSemaphore == 0)};63743\,0\,MovedOnMap;63743\,0\,ReportOnMap;false;;;counted;;;;false;;1;1\\\\\\\\\\\\\	macro;Delete;Delete;68,130;;;63743\,0\,ReportDelete,63743\,0\,SingleVPReset,63743\,0\,MoveVPMarker,63743\,0\,MissedDelete;false;;;counted;;;;false;;1;1\\\\\\\\\\\\\\	report;63743\,0\,ReportAddedMap;?&lt;b&gt;Missed MO Marker $Missed_Name$ placed at $location$.&lt;\/b&gt;;;;Added to map\\\\\\\\\\\\\\\	report;63743\,0\,ReportOnMap;?&lt;i&gt;Missed MO Marker $Missed_Name$ moved $oldLocation$ to $location$.&lt;\/i&gt;;;;Moved on map\\\\\\\\\\\\\\\\	report;63743\,0\,ReportStateChange;?&lt;b&gt;Missed MO Marker flipped to $Missed_Name$ at $location$.&lt;\/b&gt;;;;State Change\\\\\\\\\\\\\\\\\	report;63743\,0\,ReportDelete;?&lt;b&gt;Missed MO Marker $Missed_Name$ deleted from $location$.&lt;\/b&gt;;;;Report Deleted\\\\\\\\\\\\\\\\\\	emb2;;2;;Flip Control;2;;;2;;;63743,0,ResetAPControl;1;false;0;0;missed_mo_ap.png,missed_mo_cp.png;AP Missed MO,CP Missed MO;true;Missed;;;true;MissedMOType;1;1;true;;70,130;;\\\\\\\\\\\\\\\\\\\	mark;Layer\\\\\\\\\\\\\\\\\\\\	delete;;63743,0,MissedDelete;\\\\\\\\\\\\\\\\\\\\\	prototype;ShadowLarge\\\\\\\\\\\\\\\\\\\\\\	piece;;;;/0	\	;;\\	;;\\\	\\\\	\\\\\	\\\\\\	\\\\\\\	\\\\\\\\	\\\\\\\\\	\\\\\\\\\\	\\\\\\\\\\\	\\\\\\\\\\\\	\\\\\\\\\\\\\	\\\\\\\\\\\\\\	-1\\\\\\\\\\\\\\\	-1\\\\\\\\\\\\\\\\	-1\\\\\\\\\\\\\\\\\	-1\\\\\\\\\\\\\\\\\\	1\\\\\\\\\\\\\\\\\\\	Markers\\\\\\\\\\\\\\\\\\\\	\\\\\\\\\\\\\\\\\\\\\	\\\\\\\\\\\\\\\\\\\\\\	null;50;50;;0</VASSAL.build.module.PrototypeDefinition>
             <VASSAL.build.module.PrototypeDefinition description="" name="Missed MO Marker StartAP">+/null/PROP;VPValue;true,-1,2,true;:63743\,0\,FlipCounter:I\,2	PROP;MissedMOType;true,1,2,true;:63743\,0\,FlipCounter:I\,1\	prototype;Missed MO Marker\\	piece;;;;/1	1\	\\	null;0;0;</VASSAL.build.module.PrototypeDefinition>
             <VASSAL.build.module.PrototypeDefinition description="" name="Missed MO Marker StartCP">+/null/PROP;VPValue;true,-1,2,true;:63743\,0\,FlipCounter:I\,2	PROP;MissedMOType;true,1,2,true;:63743\,0\,FlipCounter:I\,1\	prototype;Missed MO Marker\\	piece;;;;/-1	2\	\\	null;0;0;</VASSAL.build.module.PrototypeDefinition>
+        </VASSAL.build.module.folder.PrototypeFolder>
+        <VASSAL.build.module.folder.PrototypeFolder desc="" name="Draw Buttons">
+            <VASSAL.build.module.PrototypeDefinition description="Draw button on hand window" name="Draw Button">+/null/button;57970,0,DrawCard;0;0;0;0;;false;true;1;0	immob;Z;V;R;\	mark;Layer\\	piece;;;;/	\	Map\\	null;37;32;;0</VASSAL.build.module.PrototypeDefinition>
+            <VASSAL.build.module.PrototypeDefinition description="" name="Draw Button AP">+/null/report;57970\,0\,DrawCard;&lt;b&gt;1 card drawn by the Allied Powers.&lt;\/b&gt;;;;;false	globalkey;;57970,0,DrawCard;57416,0,DrawAP;;false;1;false;true;;;1;COUNTER|true|DECK|||||0|0|AP Deck|false|||EQUALS\	emb2;Activate;128;A;;128;;;128;;;;1;false;0;0;DrawAllied.png;;true;;;;false;;1;1;true;65,130;;;;1.0\\	prototype;Draw Button\\\	piece;;;;/-1	\	1\\	\\\	null;71;37;;0</VASSAL.build.module.PrototypeDefinition>
+            <VASSAL.build.module.PrototypeDefinition description="" name="Draw Button CP">+/null/report;57970\,0\,DrawCard;&lt;b&gt;1 card drawn by the Central Powers.&lt;\/b&gt;;;;;false	globalkey;;57970,0,DrawCard;57373,0,DrawCP;;false;1;false;true;;;1;COUNTER|true|DECK|||||0|0|CP Deck|false|||EQUALS\	emb2;Activate;128;A;;128;;;128;;;;1;false;0;0;DrawCentral.png;;true;;;;false;;1;1;true;65,130;;;;1.0\\	prototype;Draw Button\\\	piece;;;;/-1	\	1\\	\\\	null;71;37;;0</VASSAL.build.module.PrototypeDefinition>
         </VASSAL.build.module.folder.PrototypeFolder>
     </VASSAL.build.module.PrototypesContainer>
     <VASSAL.build.module.Map allowMultiple="false" backgroundcolor="255,255,255" buttonName="Map" changeFormat="$message$" color="255,255,51" createFormat="" edgeHeight="0" edgeWidth="0" hideKey="" hotkey="" icon="" launch="false" mapName="Map" markMoved="Use Preferences Setting" markUnmovedHotkey="" markUnmovedIcon="" markUnmovedReport="" markUnmovedText="" markUnmovedTooltip="" moveKey="57346,0,MovedOnMap" moveToFormat="" moveWithinFormat="" showKey="" thickness="5">
@@ -1735,7 +1740,7 @@
         <VASSAL.build.module.map.HighlightLastMoved color="255,0,0" enabled="true" thickness="2"/>
         <VASSAL.build.module.map.HidePiecesButton buttonText="" hiddenIcon="All_Hidden.png" hotkey="120,0" showingIcon="All_Revealed.png" tooltip="Hide/Unhide all pieces"/>
         <VASSAL.build.module.map.LayeredPieceCollection layerOrder="Hidden,Map,Forts,Control,Trenches,Units,Markers,Turn" property="Layer">
-            <VASSAL.build.module.map.LayerControl canDisable="false" command="Switch Layer between Active and Inactive" hotkey="121,0" icon="toolbar_unitvis2.png" layers="Units" propertyGate="" skip="true" text="" tooltip="Hide/Unhide units"/>
+            <VASSAL.build.module.map.LayerControl canDisable="false" command="Switch Layer between Active and Inactive" disabledIcon="" hotkey="121,0" icon="toolbar_unitvis2.png" layers="Units" propertyGate="" skip="true" text="" tooltip="Hide/Unhide units"/>
             <VASSAL.build.module.map.LayerControl canDisable="false" command="Switch Layer between Active and Inactive" hotkey="122,0" icon="toolbar_markervis2.png" layers="Trenches," propertyGate="" skip="true" text="" tooltip="Hide/Unhide Trenches"/>
         </VASSAL.build.module.map.LayeredPieceCollection>
         <VASSAL.build.module.map.ImageSaver buttonText="" canDisable="false" hotkey="" icon="camera-photo.png" propertyGate="" tooltip="Save Map as PNG"/>
@@ -3569,7 +3574,7 @@
     <VASSAL.build.module.ChartWindow hotkey="" icon="background3.png" name="How to Play" text="" tooltip="How to play using this module">
         <VASSAL.build.widget.HtmlChart chartName="How to Play" fileName="HowToPlay.html"/>
     </VASSAL.build.module.ChartWindow>
-    <VASSAL.build.module.PlayerHand allowMultiple="false" backgroundcolor="226,99,99" buttonName="" changeFormat="$message$" color="0,0,0" createFormat="" edgeHeight="0" edgeWidth="0" hideKey="" hotkey="" icon="toolbar_aphand.png" launch="true" mapName="Allied Powers" markMoved="Never" markUnmovedHotkey="" markUnmovedIcon="/images/unmoved.gif" markUnmovedReport="" markUnmovedText="" markUnmovedTooltip="Mark all pieces on this map as not moved" moveKey="" moveToFormat="" moveWithinFormat="" showKey="" side="Allied Powers,Solitaire" thickness="3" tooltip="Allied Powers hand" visible="false">
+    <VASSAL.build.module.PlayerHand allowMultiple="false" backgroundcolor="226,99,99" buttonName="" changeFormat="$message$" color="0,0,0" createFormat="" description="" edgeHeight="0" edgeWidth="0" hideKey="" hotkey="" icon="toolbar_aphand.png" launch="true" mapName="Allied Powers" markMoved="Never" markUnmovedHotkey="" markUnmovedIcon="/images/unmoved.gif" markUnmovedReport="" markUnmovedText="" markUnmovedTooltip="Mark all pieces on this map as not moved" moveKey="" moveToFormat="" moveWithinFormat="" showKey="" side="Allied Powers,Solitaire" thickness="3" tooltip="Allied Powers hand" visible="false">
         <VASSAL.build.module.map.BoardPicker addColumnText="Add column" addRowText="Add row" boardPrompt="Select board" slotHeight="125" slotScale="0.2" slotWidth="350" title="Choose Boards">
             <VASSAL.build.module.map.boardPicker.Board height="627" name="Allied Powers" reversible="false" width="1553">
                 <VASSAL.build.module.map.boardPicker.board.RegionGrid fontsize="9" snapto="false" visible="false">
@@ -3577,7 +3582,6 @@
                 </VASSAL.build.module.map.boardPicker.board.RegionGrid>
             </VASSAL.build.module.map.boardPicker.Board>
         </VASSAL.build.module.map.BoardPicker>
-        <VASSAL.build.module.map.HandMetrics bottom="40,0" disabled="false" down="37,0" exSepX="12" exSepY="0" top="38,0" unexSepX="12" unexSepY="0" up="39,0"/>
         <VASSAL.build.module.map.ForwardToKeyBuffer/>
         <VASSAL.build.module.map.Scroller/>
         <VASSAL.build.module.map.ForwardToChatter/>
@@ -3585,11 +3589,39 @@
         <VASSAL.build.module.map.MapCenterer/>
         <VASSAL.build.module.map.PieceMover/>
         <VASSAL.build.module.map.KeyBufferer/>
+        <VASSAL.build.module.folder.MapSubFolder desc="" name="Draw Buttons">
+            <VASSAL.build.module.map.SetupStack useGridLocation="false" x="200" y="272">
+                <VASSAL.build.widget.PieceSlot entryName="" gpid="5311" height="64" width="75">+/null/prototype;Draw Button AP	piece;;;;/	null;0;0;5311;0</VASSAL.build.widget.PieceSlot>
+            </VASSAL.build.module.map.SetupStack>
+            <VASSAL.build.module.map.SetupStack useGridLocation="false" x="587" y="272">
+                <VASSAL.build.widget.PieceSlot entryName="" gpid="5312" height="64" width="75">+/null/prototype;Draw Button AP	piece;;;;/	null;0;0;5312;0</VASSAL.build.widget.PieceSlot>
+            </VASSAL.build.module.map.SetupStack>
+            <VASSAL.build.module.map.SetupStack useGridLocation="false" x="974" y="272">
+                <VASSAL.build.widget.PieceSlot entryName="" gpid="5313" height="64" width="75">+/null/prototype;Draw Button AP	piece;;;;/	null;0;0;5313;0</VASSAL.build.widget.PieceSlot>
+            </VASSAL.build.module.map.SetupStack>
+            <VASSAL.build.module.map.SetupStack useGridLocation="false" x="1361" y="272">
+                <VASSAL.build.widget.PieceSlot entryName="" gpid="5314" height="64" width="75">+/null/prototype;Draw Button AP	piece;;;;/	null;0;0;5314;0</VASSAL.build.widget.PieceSlot>
+            </VASSAL.build.module.map.SetupStack>
+            <VASSAL.build.module.map.SetupStack useGridLocation="false" x="1748" y="272">
+                <VASSAL.build.widget.PieceSlot entryName="" gpid="5315" height="64" width="75">+/null/prototype;Draw Button AP	piece;;;;/	null;0;0;5315;0</VASSAL.build.widget.PieceSlot>
+            </VASSAL.build.module.map.SetupStack>
+            <VASSAL.build.module.map.SetupStack useGridLocation="false" x="2135" y="272">
+                <VASSAL.build.widget.PieceSlot entryName="" gpid="5316" height="64" width="75">+/null/prototype;Draw Button AP	piece;;;;/	null;0;0;5316;0</VASSAL.build.widget.PieceSlot>
+            </VASSAL.build.module.map.SetupStack>
+            <VASSAL.build.module.map.SetupStack useGridLocation="false" x="2522" y="272">
+                <VASSAL.build.widget.PieceSlot entryName="" gpid="5317" height="64" width="75">+/null/prototype;Draw Button AP	piece;;;;/	null;0;0;5317;0</VASSAL.build.widget.PieceSlot>
+            </VASSAL.build.module.map.SetupStack>
+            <VASSAL.build.module.map.SetupStack useGridLocation="false" x="2909" y="272">
+                <VASSAL.build.widget.PieceSlot entryName="" gpid="5318" height="64" width="75">+/null/prototype;Draw Button AP	piece;;;;/	null;0;0;5318;0</VASSAL.build.widget.PieceSlot>
+            </VASSAL.build.module.map.SetupStack>
+        </VASSAL.build.module.folder.MapSubFolder>
+        <VASSAL.build.module.map.HandMetrics bottom="40,0" disabled="false" down="37,0" exSepX="12" exSepY="0" top="38,0" unexSepX="12" unexSepY="0" up="39,0"/>
         <VASSAL.build.module.map.ImageSaver buttonText="" canDisable="false" hotkey="" icon="camera-photo.png" propertyGate="" tooltip="Save as PNG"/>
         <VASSAL.build.module.properties.GlobalProperties/>
         <VASSAL.build.module.map.SelectionHighlighters/>
         <VASSAL.build.module.map.HighlightLastMoved color="255,0,0" enabled="false" thickness="2"/>
         <VASSAL.build.module.map.Zoomer inButtonText="" inIconName="zoom-in.png" inTooltip="Zoom in" outButtonText="" outIconName="zoom-out.png" outTooltip="Zoom out" pickButtonText="" pickIconName="zoom-fit-best.png" pickTooltip="Select Zoom" zoomInKey="" zoomLevels="0.125,0.25,0.333,0.444,0.555,0.666,1.0" zoomOutKey="" zoomPickKey="" zoomStart="4"/>
+        <VASSAL.build.module.map.LayeredPieceCollection layerOrder="Hidden,Map,Forts,Control,Trenches,Units,Markers,Turn" property="Layer"/>
         <VASSAL.build.module.folder.MapSubFolder desc="" name="Draw Button Menu">
             <VASSAL.build.module.ToolbarMenu canDisable="false" description="Draw" disabledIcon="" hotkey="" icon="drawcards.png" menuItems="Draw CP cards,Draw AP cards" propertyGate="" text="" tooltip="Draw Cards"/>
             <VASSAL.build.module.ToolbarMenu canDisable="false" description="Draw AP" disabledIcon="" hotkey="" icon="toolbar_apcard.png" menuItems="Draw 1 AP card,Draw 6 AP cards,Draw 7 AP cards,Draw 8 AP cards,Draw ALL AP cards" propertyGate="" text="Draw AP cards" tooltip="Draw AP cards"/>
@@ -3611,7 +3643,6 @@
                 </VASSAL.build.module.map.boardPicker.board.RegionGrid>
             </VASSAL.build.module.map.boardPicker.Board>
         </VASSAL.build.module.map.BoardPicker>
-        <VASSAL.build.module.map.HandMetrics bottom="40,0" disabled="false" down="37,0" exSepX="12" exSepY="0" top="38,0" unexSepX="12" unexSepY="0" up="39,0"/>
         <VASSAL.build.module.map.ForwardToKeyBuffer/>
         <VASSAL.build.module.map.Scroller/>
         <VASSAL.build.module.map.ForwardToChatter/>
@@ -3619,11 +3650,39 @@
         <VASSAL.build.module.map.MapCenterer/>
         <VASSAL.build.module.map.PieceMover/>
         <VASSAL.build.module.map.KeyBufferer/>
+        <VASSAL.build.module.folder.MapSubFolder desc="" name="Draw Buttons">
+            <VASSAL.build.module.map.SetupStack useGridLocation="false" x="200" y="272">
+                <VASSAL.build.widget.PieceSlot entryName="" gpid="5319" height="64" width="75">+/null/prototype;Draw Button CP	piece;;;;/	null;0;0;5319;0</VASSAL.build.widget.PieceSlot>
+            </VASSAL.build.module.map.SetupStack>
+            <VASSAL.build.module.map.SetupStack useGridLocation="false" x="587" y="272">
+                <VASSAL.build.widget.PieceSlot entryName="" gpid="5320" height="64" width="75">+/null/prototype;Draw Button CP	piece;;;;/	null;0;0;5320;0</VASSAL.build.widget.PieceSlot>
+            </VASSAL.build.module.map.SetupStack>
+            <VASSAL.build.module.map.SetupStack useGridLocation="false" x="974" y="272">
+                <VASSAL.build.widget.PieceSlot entryName="" gpid="5321" height="64" width="75">+/null/prototype;Draw Button CP	piece;;;;/	null;0;0;5321;0</VASSAL.build.widget.PieceSlot>
+            </VASSAL.build.module.map.SetupStack>
+            <VASSAL.build.module.map.SetupStack useGridLocation="false" x="1361" y="272">
+                <VASSAL.build.widget.PieceSlot entryName="" gpid="5322" height="64" width="75">+/null/prototype;Draw Button CP	piece;;;;/	null;0;0;5322;0</VASSAL.build.widget.PieceSlot>
+            </VASSAL.build.module.map.SetupStack>
+            <VASSAL.build.module.map.SetupStack useGridLocation="false" x="1748" y="272">
+                <VASSAL.build.widget.PieceSlot entryName="" gpid="5323" height="64" width="75">+/null/prototype;Draw Button CP	piece;;;;/	null;0;0;5323;0</VASSAL.build.widget.PieceSlot>
+            </VASSAL.build.module.map.SetupStack>
+            <VASSAL.build.module.map.SetupStack useGridLocation="false" x="2135" y="272">
+                <VASSAL.build.widget.PieceSlot entryName="" gpid="5324" height="64" width="75">+/null/prototype;Draw Button CP	piece;;;;/	null;0;0;5324;0</VASSAL.build.widget.PieceSlot>
+            </VASSAL.build.module.map.SetupStack>
+            <VASSAL.build.module.map.SetupStack useGridLocation="false" x="2522" y="272">
+                <VASSAL.build.widget.PieceSlot entryName="" gpid="5325" height="64" width="75">+/null/prototype;Draw Button CP	piece;;;;/	null;0;0;5325;0</VASSAL.build.widget.PieceSlot>
+            </VASSAL.build.module.map.SetupStack>
+            <VASSAL.build.module.map.SetupStack useGridLocation="false" x="2909" y="272">
+                <VASSAL.build.widget.PieceSlot entryName="" gpid="5326" height="64" width="75">+/null/prototype;Draw Button CP	piece;;;;/	null;0;0;5326;0</VASSAL.build.widget.PieceSlot>
+            </VASSAL.build.module.map.SetupStack>
+        </VASSAL.build.module.folder.MapSubFolder>
+        <VASSAL.build.module.map.HandMetrics bottom="40,0" disabled="false" down="37,0" exSepX="12" exSepY="0" top="38,0" unexSepX="12" unexSepY="0" up="39,0"/>
         <VASSAL.build.module.map.ImageSaver buttonText="" canDisable="false" hotkey="" icon="camera-photo.png" propertyGate="" tooltip="Save as PNG"/>
         <VASSAL.build.module.properties.GlobalProperties/>
         <VASSAL.build.module.map.SelectionHighlighters/>
         <VASSAL.build.module.map.HighlightLastMoved color="255,0,0" enabled="false" thickness="2"/>
         <VASSAL.build.module.map.Zoomer inButtonText="" inIconName="zoom-in.png" inTooltip="Zoom in" outButtonText="" outIconName="zoom-out.png" outTooltip="Zoom out" pickButtonText="" pickIconName="zoom-fit-best.png" pickTooltip="Select Zoom" zoomInKey="" zoomLevels="0.125,0.25,0.333,0.444,0.555,0.666,1.0" zoomOutKey="" zoomPickKey="" zoomStart="4"/>
+        <VASSAL.build.module.map.LayeredPieceCollection layerOrder="Hidden,Map,Forts,Control,Trenches,Units,Markers,Turn" property="Layer"/>
         <VASSAL.build.module.folder.MapSubFolder desc="" name="Draw Button Menu">
             <VASSAL.build.module.ToolbarMenu canDisable="false" description="Draw" disabledIcon="" hotkey="" icon="drawcards.png" menuItems="Draw CP cards,Draw AP cards" propertyGate="" text="" tooltip="Draw Cards"/>
             <VASSAL.build.module.ToolbarMenu canDisable="false" description="Draw CP" disabledIcon="" hotkey="" icon="toolbar_cpcard.png" menuItems="Draw 1 CP card,Draw 6 CP cards,Draw 7 CP cards,Draw 8 CP cards,Draw ALL CP cards" propertyGate="" text="Draw CP cards" tooltip="Draw CP cards"/>
@@ -4051,16 +4110,16 @@
     <VASSAL.build.module.PieceWindow defaultWidth="0" hidden="false" hotkey="71,520" icon="toolbar_markers.png" name="Markers" scale="0.6666" text="" tooltip="Game Markers and Events">
         <VASSAL.build.widget.TabWidget entryName="Markers">
             <VASSAL.build.widget.PanelWidget entryName="Markers" fixed="true" nColumns="5" scale="0.6666" vert="false">
-                <VASSAL.build.widget.PieceSlot entryName="AP Control" gpid="3676" height="51" width="51">+/null/prototype;Control Marker StartAP	piece;;;;AP Control/	null;0;0;3676;0</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="CP Control" gpid="3677" height="51" width="51">+/null/prototype;Control Marker StartCP	piece;;;;CP Control/	null;0;0;3677;0</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="AP Trench" gpid="3678" height="66" width="66">+/null/prototype;Trench_AP	piece;;;ap_trench1.png;AP Trench/	null;0;0;3678;0</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="CP Trench" gpid="3679" height="66" width="66">+/null/prototype;Trench_CP	piece;;;;CP Trench/	null;0;0;3679;0</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="Trench Roll -1" gpid="3680" height="53" width="53">+/null/prototype;Trench Roll Marker	piece;;;;Trench Roll -1/	null;0;0;3680;0</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="Fort Besieged" gpid="3681" height="51" width="51">+/null/prototype;Fort Marker StartBesieged	piece;;;;Fort Besieged/	null;0;0;3681;0</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="Fort Destroyed" gpid="3682" height="51" width="51">+/null/prototype;Fort Marker StartDestroyed	piece;;;;Fort Destroyed/	null;0;0;3682;0</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="Fort Destroyed (Mini)" gpid="4202" height="21" width="21">+/null/prototype;Fort Mini Marker	piece;;;;Fort Destroyed (Mini)/	null;0;0;4202;0</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="OOS AP" gpid="3683" height="51" width="51">+/null/prototype;OOS Marker StartAP	piece;;;;OOS AP/	null;0;0;3683;0</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="OOS CP" gpid="4200" height="51" width="51">+/null/prototype;OOS Marker StartCP	piece;;;;OOS CP/	null;0;0;4200;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="AP Control" gpid="3676" height="42" width="49">+/null/prototype;Control Marker StartAP	piece;;;;AP Control/	null;0;0;3676;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="CP Control" gpid="3677" height="42" width="49">+/null/prototype;Control Marker StartCP	piece;;;;CP Control/	null;0;0;3677;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="AP Trench" gpid="3678" height="42" width="49">+/null/prototype;Trench_AP	piece;;;ap_trench1.png;AP Trench/	null;0;0;3678;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="CP Trench" gpid="3679" height="42" width="49">+/null/prototype;Trench_CP	piece;;;;CP Trench/	null;0;0;3679;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="Trench Roll -1" gpid="3680" height="42" width="49">+/null/prototype;Trench Roll Marker	piece;;;;Trench Roll -1/	null;0;0;3680;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="Fort Besieged" gpid="3681" height="42" width="49">+/null/prototype;Fort Marker StartBesieged	piece;;;;Fort Besieged/	null;0;0;3681;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="Fort Destroyed" gpid="3682" height="42" width="49">+/null/prototype;Fort Marker StartDestroyed	piece;;;;Fort Destroyed/	null;0;0;3682;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="Fort Destroyed (Mini)" gpid="4202" height="42" width="49">+/null/prototype;Fort Mini Marker	piece;;;;Fort Destroyed (Mini)/	null;0;0;4202;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="OOS AP" gpid="3683" height="42" width="49">+/null/prototype;OOS Marker StartAP	piece;;;;OOS AP/	null;0;0;3683;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="OOS CP" gpid="4200" height="42" width="49">+/null/prototype;OOS Marker StartCP	piece;;;;OOS CP/	null;0;0;4200;0</VASSAL.build.widget.PieceSlot>
             </VASSAL.build.widget.PanelWidget>
             <VASSAL.build.widget.PanelWidget entryName="VP's" fixed="true" nColumns="5" scale="0.6666" vert="false">
                 <VASSAL.build.widget.PieceSlot entryName="Blockade VP" gpid="3769" height="42" width="49">+/null/prototype;Blockade VP (-1VP)	piece;;;;Blockade VP/	null;0;0;3769;0</VASSAL.build.widget.PieceSlot>
