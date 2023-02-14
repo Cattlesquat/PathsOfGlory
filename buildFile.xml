@@ -4131,16 +4131,16 @@
     <VASSAL.build.module.PieceWindow defaultWidth="0" hidden="false" hotkey="71,520" icon="toolbar_markers.png" name="Markers" scale="0.6666" text="" tooltip="Game Markers and Events">
         <VASSAL.build.widget.TabWidget entryName="Markers">
             <VASSAL.build.widget.PanelWidget entryName="Markers" fixed="true" nColumns="5" scale="0.6666" vert="false">
-                <VASSAL.build.widget.PieceSlot entryName="AP Control" gpid="3676" height="42" width="49">+/null/prototype;Control Marker StartAP	piece;;;;AP Control/	null;0;0;3676;0</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="CP Control" gpid="3677" height="42" width="49">+/null/prototype;Control Marker StartCP	piece;;;;CP Control/	null;0;0;3677;0</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="AP Trench" gpid="3678" height="42" width="49">+/null/prototype;Trench_AP	piece;;;ap_trench1.png;AP Trench/	null;0;0;3678;0</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="CP Trench" gpid="3679" height="42" width="49">+/null/prototype;Trench_CP	piece;;;;CP Trench/	null;0;0;3679;0</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="Trench Roll -1" gpid="3680" height="42" width="49">+/null/prototype;Trench Roll Marker	piece;;;;Trench Roll -1/	null;0;0;3680;0</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="Fort Besieged" gpid="3681" height="42" width="49">+/null/prototype;Fort Marker StartBesieged	piece;;;;Fort Besieged/	null;0;0;3681;0</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="Fort Destroyed" gpid="3682" height="42" width="49">+/null/prototype;Fort Marker StartDestroyed	piece;;;;Fort Destroyed/	null;0;0;3682;0</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="Fort Destroyed (Mini)" gpid="4202" height="42" width="49">+/null/prototype;Fort Mini Marker	piece;;;;Fort Destroyed (Mini)/	null;0;0;4202;0</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="OOS AP" gpid="3683" height="42" width="49">+/null/prototype;OOS Marker StartAP	piece;;;;OOS AP/	null;0;0;3683;0</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="OOS CP" gpid="4200" height="42" width="49">+/null/prototype;OOS Marker StartCP	piece;;;;OOS CP/	null;0;0;4200;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="AP Control" gpid="3676" height="51" width="51">+/null/prototype;Control Marker StartAP	piece;;;;AP Control/	null;0;-16;3676;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="CP Control" gpid="3677" height="51" width="51">+/null/prototype;Control Marker StartCP	piece;;;;CP Control/	null;0;-16;3677;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="AP Trench" gpid="3678" height="66" width="66">+/null/prototype;Trench_AP	piece;;;ap_trench1.png;AP Trench/	null;0;-16;3678;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="CP Trench" gpid="3679" height="66" width="66">+/null/prototype;Trench_CP	piece;;;;CP Trench/	null;0;-16;3679;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="Trench Roll -1" gpid="3680" height="53" width="53">+/null/prototype;Trench Roll Marker	piece;;;;Trench Roll -1/	null;0;-16;3680;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="Fort Besieged" gpid="3681" height="51" width="51">+/null/prototype;Fort Marker StartBesieged	piece;;;;Fort Besieged/	null;0;-16;3681;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="Fort Destroyed" gpid="3682" height="51" width="51">+/null/prototype;Fort Marker StartDestroyed	piece;;;;Fort Destroyed/	null;0;-16;3682;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="Fort Destroyed (Mini)" gpid="4202" height="21" width="21">+/null/prototype;Fort Mini Marker	piece;;;;Fort Destroyed (Mini)/	null;0;-16;4202;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="OOS AP" gpid="3683" height="51" width="51">+/null/prototype;OOS Marker StartAP	piece;;;;OOS AP/	null;0;-16;3683;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="OOS CP" gpid="4200" height="51" width="51">+/null/prototype;OOS Marker StartCP	piece;;;;OOS CP/	null;0;-16;4200;0</VASSAL.build.widget.PieceSlot>
             </VASSAL.build.widget.PanelWidget>
             <VASSAL.build.widget.PanelWidget entryName="VP's" fixed="true" nColumns="5" scale="0.6666" vert="false">
                 <VASSAL.build.widget.PieceSlot entryName="Blockade VP" gpid="3769" height="42" width="49">+/null/prototype;Blockade VP (-1VP)	piece;;;;Blockade VP/	null;0;0;3769;0</VASSAL.build.widget.PieceSlot>
@@ -4270,7 +4270,7 @@
     <VASSAL.i18n.Language>
         <VASSAL.i18n.Translation locale="es,"/>
     </VASSAL.i18n.Language>
-    <VASSAL.build.module.turn.TurnTracker buttonText="" fwdOnly="false" hotkey="85,520" icon="toolbar_turn.png" length="100" lengthStyle="Fixed" name="Turn" nexthotkey="84,195" plusButtonSize="28" prevhotkey="85,195" reportFormat="!&lt;b&gt;$PlayerSide$ advances to Turn $Turn$ ($Turn Name$).&lt;/b&gt;" tooltip="Right-click to configure" turnButtonHeight="40" turnFormat="&lt;html&gt;&lt;div style=&quot;text-align:center&quot;&gt;Turn $Turn$&lt;br&gt;&lt;span style=&quot;font-family:Arial;font-size:9px;font-weight:bold;text-align:center&quot;&gt;$Turn Name$&lt;/span&gt;&lt;/div&gt;&lt;/html&gt; ">
+    <VASSAL.build.module.turn.TurnTracker buttonText="" fwdOnly="false" hotkey="85,520" icon="toolbar_turn.png" length="100" lengthStyle="Fixed" name="Turn" nexthotkey="84,195" plusButtonSize="28" prevhotkey="85,195" reportFormat="`&lt;b&gt;##################################################&lt;br&gt;* $PlayerSide$ advances to Turn $Turn$ ($Turn Name$).&lt;br&gt;* ##################################################&lt;/b&gt;" tooltip="Right-click to configure" turnButtonHeight="40" turnFormat="&lt;html&gt;&lt;div style=&quot;text-align:center&quot;&gt;Turn $Turn$&lt;br&gt;&lt;span style=&quot;font-family:Arial;font-size:9px;font-weight:bold;text-align:center&quot;&gt;$Turn Name$&lt;/span&gt;&lt;/div&gt;&lt;/html&gt; ">
         <VASSAL.build.module.turn.CounterTurnLevel incr="1" loop="true" loopLimit="20" name="Turn" property="Turn" start="1" turnFormat="$value$"/>
         <VASSAL.build.module.turn.TurnGlobalHotkey hotkey="35,0" match="" name="Change Turn" reportFormat=""/>
     </VASSAL.build.module.turn.TurnTracker>
