@@ -6,6 +6,7 @@ del .\Paths_of_Glory_%1_es.vmod
 # -tzip = zip archive format
 
 7z a Paths_of_Glory_%1.vmod *.xml -mx1 -tzip
+7z a Paths_of_Glory_%1.vmod *.pdf -mx1 -tzip
 7z a Paths_of_Glory_%1.vmod HowToPlay.html -mx1 -tzip
 7z a Paths_of_Glory_%1.vmod changelist.html -mx1 -tzip
 7z a Paths_of_Glory_%1.vmod notes.html -mx1 -tzip
