@@ -19,12 +19,19 @@ package PathsOfGlory;
 
 import VASSAL.build.Buildable;
 import VASSAL.build.GameModule;
+import VASSAL.build.module.GlobalOptions;
 import VASSAL.command.CommandEncoder;
 import VASSAL.configure.ColorConfigurer;
 import VASSAL.i18n.Resources;
 import VASSAL.preferences.Prefs;
+import VASSAL.tools.ErrorDialog;
+import VASSAL.tools.QuickColors;
+
+import javax.swing.SwingUtilities;
+import javax.swing.text.BadLocationException;
 import java.awt.Color;
 import java.awt.Font;
+import java.io.IOException;
 
 /**
  * A tight mini-mod of the VASSAL 3.4 Chatter, to assign chat colors based on which side players are playing (rather than
@@ -89,6 +96,107 @@ public class POGChatter extends VASSAL.build.module.Chatter implements CommandEn
     addStyle(".cpchat", myFont, cpChat, "bold", 0);
     addStyle(".ref",    myFont, gameMsg2, "bold", 0);
   }
+
+
+  /**
+   * Display a message in the text area. Ensures we execute in the EDT
+   */
+  public void show(String s) {
+    if (SwingUtilities.isEventDispatchThread()) {
+      myDoShow(s);
+    }
+    else {
+      SwingUtilities.invokeLater(() -> myDoShow(s));
+    }
+  }
+
+  /**
+   * Remove any "<<Player Name>> - " header from a marked string
+   * @param s string that might have header
+   * @return string without header
+   */
+  protected String removeHeader(String s) {
+    final int index = s.indexOf(">> - ");
+    if (index < 0) return s;
+    return s.substring(index + 5);
+  }
+
+  /**
+   * Replaces doShow() from Chatter -- because I foolishly made it private instead of protected :)
+   * @param s chat string from command
+   */
+  public void myDoShow(String s) {
+    final String style;
+    final boolean html_allowed;
+
+    // Choose an appropriate style to display this message in
+    s = s.trim();
+    if (!s.isEmpty()) {
+      if (s.startsWith("*")) {
+        html_allowed = (QuickColors.getQuickColor(s, "*") >= 0) || GlobalOptions.getInstance().chatterHTMLSupport();
+        style = QuickColors.getQuickColorHTMLStyle(s, "*");
+        s = QuickColors.stripQuickColorTag(s, "*");
+      }
+      else if (s.startsWith("-")) {
+        html_allowed = true;
+        style = (QuickColors.getQuickColor(s, "-") >= 0) ? QuickColors.getQuickColorHTMLStyle(s, "-") : "sys"; //NON-NLS
+        s = QuickColors.stripQuickColorTag(s, "-");
+      }
+      else {
+        style = getChatStyle(s);
+
+        if (s.contains("@cp")) {
+          s = "CP Player: " + removeHeader(s);
+          s = s.replace("@cp", "");
+        }
+        else if (s.contains("@ap")) {
+          s = "AP Player: " + removeHeader(s);
+          s = s.replace("@ap", "");
+        }
+        else if (s.contains("@ref")) {
+          s = "Moderator: " + removeHeader(s);
+          s = s.replace("@ref", "");
+        }
+        else if (s.contains("@@")) {
+          s = removeHeader(s).replace("@@", "");
+        }
+
+        html_allowed = false;
+      }
+    }
+    else {
+      style = "msg";  //NON-NLS
+      html_allowed = false;
+    }
+
+    // Disable unwanted HTML tags in contexts where it shouldn't be allowed:
+    // (1) Anything received from chat channel, for security reasons
+    // (2) Legacy module "report" text when not explicitly opted in w/ first character or preference setting
+    if (!html_allowed) {
+      s = s.replaceAll("<", "&lt;")  //NON-NLS // This prevents any unwanted tag from functioning
+        .replaceAll(">", "&gt;"); //NON-NLS // This makes sure > doesn't break any of our legit <div> tags
+    }
+
+    // Now we have to fix up any legacy angle brackets around the word <observer>
+    final String keystring = Resources.getString("PlayerRoster.observer");
+    final String replace = keystring.replace("<", "&lt;").replace(">", "&gt;"); //NON-NLS
+    if (!replace.equals(keystring)) {
+      s = s.replace(keystring, replace);
+    }
+
+    // Insert a div of the correct style for our line of text. Module designer
+    // still free to insert <span> tags and <img> tags and the like in Report
+    // messages.
+    try {
+      kit.insertHTML(doc, doc.getLength(), "\n<div class=\"" + style + "\">" + s + "</div>", 0, 0, null); //NON-NLS
+    }
+    catch (BadLocationException | IOException ble) {
+      ErrorDialog.bug(ble);
+    }
+
+    conversationPane.repaint();
+  }
+
 
   /**
    * Add two extra color preferences, one for each player side
