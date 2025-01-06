@@ -66,7 +66,7 @@ public class POGChatter extends VASSAL.build.module.Chatter implements CommandEn
         style = "cpchat";
       } else if (ss.contains("@ap")) {
         style = "apchat";
-      } else if (ss.contains("@ref")) {
+      } else if (ss.contains("@ref") || ss.contains("@@")) {
         style = "ref";
       }
     } else {
@@ -116,9 +116,9 @@ public class POGChatter extends VASSAL.build.module.Chatter implements CommandEn
    * @return string without header
    */
   protected String removeHeader(String s) {
-    final int index = s.indexOf(">> - ");
+    final int index = s.indexOf(" - ");
     if (index < 0) return s;
-    return s.substring(index + 5);
+    return s.substring(index + 3);
   }
 
   /**
@@ -146,22 +146,53 @@ public class POGChatter extends VASSAL.build.module.Chatter implements CommandEn
         style = getChatStyle(s);
 
         if (s.contains("@cp")) {
-          s = "CP Player: " + removeHeader(s);
-          s = s.replace("@cp", "");
+          s = removeHeader(s).replace("@cp", "");
+          if (s.startsWith("@@")) {
+            s = s.substring(2);
+          }
+          else {
+            s = "CP Player: " + s;
+          }
         }
         else if (s.contains("@ap")) {
-          s = "AP Player: " + removeHeader(s);
-          s = s.replace("@ap", "");
+          s = removeHeader(s).replace("@ap", "");
+          if (s.startsWith("@@")) {
+            s = s.substring(2);
+          }
+          else {
+            s = "AP Player: " + s;
+          }
         }
         else if (s.contains("@ref")) {
-          s = "Moderator: " + removeHeader(s);
-          s = s.replace("@ref", "");
+          s = removeHeader(s).replace("@ref", "");
+          if (s.startsWith("@@")) {
+            s = s.substring(2);
+          }
+          else {
+            s = "Moderator: " + s;
+          }
         }
         else if (s.contains("@@")) {
           s = removeHeader(s).replace("@@", "");
         }
 
-        html_allowed = false;
+        boolean html = false;
+
+        // Moderator can mark die rolls with @cdX and @adX where X is 1-6
+        for (int x = 1; x <= 6; x++) {
+          final String cpstring = "@cd" + x;
+          if (s.contains(cpstring)) {
+            s = s.replace(cpstring, "<img src=\"d6-" + x + "-grey.png\" width=\"14\" height=\"14\">");
+            html = true;
+          }
+          final String apstring = "@ad" + x;
+          if (s.contains(apstring)) {
+            s = s.replace(apstring, "<img src=\"d6-" + x + "-blue.png\" width=\"14\" height=\"14\">");
+            html = true;
+          }
+        }
+
+        html_allowed = html;
       }
     }
     else {
