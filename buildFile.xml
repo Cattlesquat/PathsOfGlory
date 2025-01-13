@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<VASSAL.build.GameModule ModuleOther1="" ModuleOther2="" VassalVersion="3.7.10" description="Featuring the Deluxe 2018 edition of Ted Raicer's Card-Driven Strategy Game of WW1" name="Paths of Glory" nextPieceSlotId="5344" version="10.8">
+<VASSAL.build.GameModule ModuleOther1="" ModuleOther2="" VassalVersion="3.7.10" description="Featuring the Deluxe 2018 edition of Ted Raicer's Card-Driven Strategy Game of WW1" name="Paths of Glory" nextPieceSlotId="5345" version="10.8">
     <VASSAL.build.module.BasicCommandEncoder/>
     <VASSAL.build.module.Documentation>
         <VASSAL.build.module.documentation.AboutScreen fileName="cover.jpg" title="About Module"/>
@@ -2181,46 +2181,49 @@
             </VASSAL.build.module.folder.MapSubFolder>
             <VASSAL.build.module.folder.MapSubFolder desc="" name="VP Space and other Scenario Patches">
                 <VASSAL.build.module.map.SetupStack location="Aachen" name="AachenHistoricalVP" owningBoard="Classic Map" useGridLocation="false" x="1033" y="1053">
-                    <VASSAL.build.widget.PieceSlot entryName="Aachen" gpid="1040" height="64" width="75">+/null/mark;Layer	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,addvp_aachen.png;,;true;;;;true;{Variant+1};1;1;true;65,130;;;;1.0;;true\	immob;c;V;R;\\	piece;;;;Aachen/Map	2\	\\	null;0;0;1040;0</VASSAL.build.widget.PieceSlot>
+                    <VASSAL.build.widget.PieceSlot entryName="Aachen" gpid="1040" height="64" width="75">+/null/prototype;Empty Space	mark;Layer\	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,addvp_aachen.png;,;true;;;;true;{Variant+1};1;1;true;65,130;;;;1.0;;true\\	immob;c;V;R;\\\	piece;;;;Aachen/	Map\	2\\	\\\	null;0;0;1040;0</VASSAL.build.widget.PieceSlot>
                 </VASSAL.build.module.map.SetupStack>
                 <VASSAL.build.module.map.SetupStack location="Koblenz" name="KoblenzHistoricalVP" owningBoard="Classic Map" useGridLocation="false" x="1118" y="1201">
-                    <VASSAL.build.widget.PieceSlot entryName="Koblenz" gpid="1041" height="64" width="75">+/null/mark;Layer	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,addvp_koblenz.png;,;true;;;;true;{Variant+1};1;1;true;65,130;;;;1.0;;true\	immob;c;V;R;\\	piece;;;;Koblenz/Map	2\	\\	null;0;0;1041;0</VASSAL.build.widget.PieceSlot>
+                    <VASSAL.build.widget.PieceSlot entryName="Koblenz" gpid="1041" height="64" width="75">+/null/prototype;Empty Space	mark;Layer\	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,addvp_koblenz.png;,;true;;;;true;{Variant+1};1;1;true;65,130;;;;1.0;;true\\	immob;c;V;R;\\\	piece;;;;Koblenz/	Map\	2\\	\\\	null;0;0;1041;0</VASSAL.build.widget.PieceSlot>
                 </VASSAL.build.module.map.SetupStack>
                 <VASSAL.build.module.map.SetupStack location="Amiens" name="AmiensHistoricalVP" owningBoard="Classic Map" useGridLocation="false" x="579" y="1298">
-                    <VASSAL.build.widget.PieceSlot entryName="Amiens" gpid="1042" height="64" width="75">+/null/mark;Layer	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,addvp_amiens.png;,;true;;;;true;{Variant+1};1;1;true;65,130;;;;1.0;;true\	immob;c;V;R;\\	piece;;;;Amiens/Map	1\	\\	null;0;0;1042;0</VASSAL.build.widget.PieceSlot>
+                    <VASSAL.build.widget.PieceSlot entryName="Amiens" gpid="1042" height="64" width="75">+/null/prototype;Empty Space	mark;Layer\	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,addvp_amiens.png;,;true;;;;true;{Variant+1};1;1;true;65,130;;;;1.0;;true\\	immob;c;V;R;\\\	piece;;;;Amiens/	Map\	1\\	\\\	null;0;0;1042;0</VASSAL.build.widget.PieceSlot>
                 </VASSAL.build.module.map.SetupStack>
                 <VASSAL.build.module.map.SetupStack location="Kovno" name="KovnoHistoricalVP" owningBoard="Classic Map" useGridLocation="false" x="2858" y="555">
-                    <VASSAL.build.widget.PieceSlot entryName="Kovno" gpid="1044" height="64" width="75">+/null/mark;Layer	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,addvp_kovno.png;0,1;true;;;;true;{Variant+1};1;1;true;65,130;;;;1.0;;true\	immob;c;V;R;\\	piece;;;;Kovno/Map	1\	\\	null;0;0;1044;0</VASSAL.build.widget.PieceSlot>
+                    <VASSAL.build.widget.PieceSlot entryName="Kovno" gpid="1044" height="64" width="75">+/null/prototype;Empty Space	mark;Layer\	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,addvp_kovno.png;0,1;true;;;;true;{Variant+1};1;1;true;65,130;;;;1.0;;true\\	immob;c;V;R;\\\	piece;;;;Kovno/	Map\	1\\	\\\	null;0;0;1044;0</VASSAL.build.widget.PieceSlot>
                 </VASSAL.build.module.map.SetupStack>
                 <VASSAL.build.module.map.SetupStack location="Sedan" name="SedanHistoricalVP" owningBoard="Classic Map" useGridLocation="false" x="863" y="1294">
-                    <VASSAL.build.widget.PieceSlot entryName="Sedan" gpid="3156" height="64" width="75">+/null/mark;Layer	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,addvp_sedan.png;0,1;true;;;;true;{Variant+1};1;1;true;65,130;;;;1.0;;true\	immob;c;V;R;\\	piece;;;;Sedan/Map	1\	\\	null;0;0;3156;0</VASSAL.build.widget.PieceSlot>
+                    <VASSAL.build.widget.PieceSlot entryName="Sedan" gpid="3156" height="64" width="75">+/null/prototype;Empty Space	mark;Layer\	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,addvp_sedan.png;0,1;true;;;;true;{Variant+1};1;1;true;65,130;;;;1.0;;true\\	immob;c;V;R;\\\	piece;;;;Sedan/	Map\	1\\	\\\	null;0;0;3156;0</VASSAL.build.widget.PieceSlot>
                 </VASSAL.build.module.map.SetupStack>
                 <VASSAL.build.module.map.SetupStack location="Kharput" name="KharputHistoricalNOVP" owningBoard="Classic Map" useGridLocation="false" x="4248" y="2388">
-                    <VASSAL.build.widget.PieceSlot entryName="Kharput" gpid="3161" height="64" width="75">+/null/mark;Layer	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,remvp_kharput.png;0,1;true;;;;true;{Variant+1};1;1;true;65,130;;;;1.0;;true\	immob;c;V;R;\\	piece;;;;Kharput/Map	2\	\\	null;0;0;3161;0</VASSAL.build.widget.PieceSlot>
+                    <VASSAL.build.widget.PieceSlot entryName="Kharput" gpid="3161" height="64" width="75">+/null/prototype;Empty Space	mark;Layer\	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,remvp_kharput.png;0,1;true;;;;true;{Variant+1};1;1;true;65,130;;;;1.0;;true\\	immob;c;V;R;\\\	piece;;;;Kharput/	Map\	2\\	\\\	null;0;0;3161;0</VASSAL.build.widget.PieceSlot>
                 </VASSAL.build.module.map.SetupStack>
                 <VASSAL.build.module.map.SetupStack location="Jerusalem" name="JerusalemHistoricalNOVP" owningBoard="Classic Map" useGridLocation="false" x="4212" y="2926">
-                    <VASSAL.build.widget.PieceSlot entryName="Jerusalem" gpid="3160" height="64" width="75">+/null/mark;Layer	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,remvp_jerusalem.png;0,1;true;;;;true;{Variant+1};1;1;true;65,130;;;;1.0;;true\	immob;c;V;R;\\	piece;;;;Jerusalem/Map	1\	\\	null;0;0;3160;0</VASSAL.build.widget.PieceSlot>
+                    <VASSAL.build.widget.PieceSlot entryName="Jerusalem" gpid="3160" height="64" width="75">+/null/prototype;Empty Space	mark;Layer\	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,remvp_jerusalem.png;0,1;true;;;;true;{Variant+1};1;1;true;65,130;;;;1.0;;true\\	immob;c;V;R;\\\	piece;;;;Jerusalem/	Map\	1\\	\\\	null;0;0;3160;0</VASSAL.build.widget.PieceSlot>
                 </VASSAL.build.module.map.SetupStack>
                 <VASSAL.build.module.map.SetupStack location="Minsk" name="MinskHistoricalNOVP" owningBoard="Classic Map" useGridLocation="false" x="3378" y="708">
-                    <VASSAL.build.widget.PieceSlot entryName="Minsk" gpid="3159" height="64" width="75">+/null/mark;Layer	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,remvp_minsk.png;0,1;true;;;;true;{Variant+1};1;1;true;65,130;;;;1.0;;true\	immob;c;V;R;\\	piece;;;;Minsk/Map	1\	\\	null;0;0;3159;0</VASSAL.build.widget.PieceSlot>
+                    <VASSAL.build.widget.PieceSlot entryName="Minsk" gpid="3159" height="64" width="75">+/null/prototype;Empty Space	mark;Layer\	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,remvp_minsk.png;0,1;true;;;;true;{Variant+1};1;1;true;65,130;;;;1.0;;true\\	immob;c;V;R;\\\	piece;;;;Minsk/	Map\	1\\	\\\	null;0;0;3159;0</VASSAL.build.widget.PieceSlot>
                 </VASSAL.build.module.map.SetupStack>
                 <VASSAL.build.module.map.SetupStack location="Venice" name="VeniceHistoricalNOVP" owningBoard="Classic Map" useGridLocation="false" x="1680" y="1985">
-                    <VASSAL.build.widget.PieceSlot entryName="Venice" gpid="3158" height="64" width="75">+/null/mark;Layer	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,remvp_venice.png;0,1;true;;;;true;{Variant+1};1;1;true;65,130;;;;1.0;;true\	immob;c;V;R;\\	piece;;;;Venice/Map	1\	\\	null;0;0;3158;0</VASSAL.build.widget.PieceSlot>
+                    <VASSAL.build.widget.PieceSlot entryName="Venice" gpid="3158" height="64" width="75">+/null/prototype;Empty Space	mark;Layer\	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,remvp_venice.png;0,1;true;;;;true;{Variant+1};1;1;true;65,130;;;;1.0;;true\\	immob;c;V;R;\\\	piece;;;;Venice/	Map\	1\\	\\\	null;0;0;3158;0</VASSAL.build.widget.PieceSlot>
                 </VASSAL.build.module.map.SetupStack>
                 <VASSAL.build.module.map.SetupStack location="Ahwaz" name="AhwazHistoricalNOVP" owningBoard="Classic Map" useGridLocation="false" x="4942" y="2910">
-                    <VASSAL.build.widget.PieceSlot entryName="Ahwaz" gpid="3157" height="64" width="75">+/null/mark;Layer	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,remvp_ahwaz.png;0,1;true;;;;true;{Variant+1};1;1;true;65,130;;;;1.0;;true\	immob;c;V;R;\\	piece;;;;Ahwaz/Map	1\	\\	null;0;0;3157;0</VASSAL.build.widget.PieceSlot>
+                    <VASSAL.build.widget.PieceSlot entryName="Ahwaz" gpid="3157" height="64" width="75">+/null/prototype;Empty Space	mark;Layer\	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;,remvp_ahwaz.png;0,1;true;;;;true;{Variant+1};1;1;true;65,130;;;;1.0;;true\\	immob;c;V;R;\\\	piece;;;;Ahwaz/	Map\	1\\	\\\	null;0;0;3157;0</VASSAL.build.widget.PieceSlot>
                 </VASSAL.build.module.map.SetupStack>
                 <VASSAL.build.module.map.SetupStack location="Lutsk" name="ClassicMapPatchLutsk" owningBoard="Classic Map" useGridLocation="false" x="3126" y="1186">
-                    <VASSAL.build.widget.PieceSlot entryName="ClassicMapPatchLutsk" gpid="3925" height="64" width="75">+/null/mark;Layer	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;map_classic_lutsk_patch.jpg;0;true;;;;false;{Variant+1};1;1;true;65,130;;;;1.0;;true\	immob;c;V;R;\\	piece;;;;ClassicMapPatchLutsk/Map	1\	\\	null;0;0;3925;0</VASSAL.build.widget.PieceSlot>
+                    <VASSAL.build.widget.PieceSlot entryName="ClassicMapPatchLutsk" gpid="3925" height="64" width="75">+/null/prototype;Empty Space	mark;Layer\	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;map_classic_lutsk_patch.jpg;0;true;;;;false;{Variant+1};1;1;true;65,130;;;;1.0;;true\\	immob;c;V;R;\\\	piece;;;;ClassicMapPatchLutsk/	Map\	1\\	\\\	null;0;0;3925;0</VASSAL.build.widget.PieceSlot>
                 </VASSAL.build.module.map.SetupStack>
                 <VASSAL.build.module.map.SetupStack location="Stanislau" name="ClassicMapPatchStanislau" owningBoard="Classic Map" useGridLocation="false" x="2950" y="1469">
-                    <VASSAL.build.widget.PieceSlot entryName="ClassicMapPatchStanislau" gpid="3929" height="64" width="75">+/null/mark;Layer	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;map_classic_stanislau_patch.jpg;0;true;;;;false;{Variant+1};1;1;true;65,130;;;;1.0;;true\	immob;c;V;R;\\	piece;;;;ClassicMapPatchStanislau/Map	1\	\\	null;0;0;3929;0</VASSAL.build.widget.PieceSlot>
+                    <VASSAL.build.widget.PieceSlot entryName="ClassicMapPatchStanislau" gpid="3929" height="64" width="75">+/null/prototype;Empty Space	mark;Layer\	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;map_classic_stanislau_patch.jpg;0;true;;;;false;{Variant+1};1;1;true;65,130;;;;1.0;;true\\	immob;c;V;R;\\\	piece;;;;ClassicMapPatchStanislau/	Map\	1\\	\\\	null;0;0;3929;0</VASSAL.build.widget.PieceSlot>
                 </VASSAL.build.module.map.SetupStack>
                 <VASSAL.build.module.map.SetupStack location="CP Reserve Box" name="ClassicMapPatchAHc" owningBoard="Classic Map" useGridLocation="false" x="4277" y="751">
                     <VASSAL.build.widget.PieceSlot entryName="ClassicMapPatchAHc" gpid="3930" height="64" width="75">+/null/mark;Layer	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;map_classic_cprb_patch.jpg;0;true;;;;false;{Variant+1};1;1;true;65,130;;;;1.0;;true\	immob;c;V;R;\\	piece;;;;ClassicMapPatchAHc/Map	1\	\\	null;0;0;3930;0</VASSAL.build.widget.PieceSlot>
                 </VASSAL.build.module.map.SetupStack>
                 <VASSAL.build.module.map.SetupStack location="AP Reserve Box" name="ClassicMapPatchRUc" owningBoard="Classic Map" useGridLocation="false" x="4494" y="1234">
                     <VASSAL.build.widget.PieceSlot entryName="ClassicMapPatchRUc" gpid="3931" height="64" width="75">+/null/mark;Layer	emb2;Activate;2;;;2;;;2;;;;1;false;0;0;map_classic_aprb_patch.jpg;0;true;;;;false;{Variant+1};1;1;true;65,130;;;;1.0;;true\	immob;c;V;R;\\	piece;;;;ClassicMapPatchRUc/Map	1\	\\	null;0;0;3931;0</VASSAL.build.widget.PieceSlot>
+                </VASSAL.build.module.map.SetupStack>
+                <VASSAL.build.module.map.SetupStack location="Debrecen" name="ClassicMapPatchDebrecen" owningBoard="Classic Map" useGridLocation="false" x="2715" y="1606">
+                    <VASSAL.build.widget.PieceSlot entryName="ClassicMapPatchDebrecen" gpid="5344" height="64" width="75">+/null/prototype;Empty Space	mark;Layer\	emb2;Activate;128;A;;128;;;128;;;;1;false;0;0;debrecen.png;0;true;;;;false;{Variant+1};1;1;true;65,130;;;;1.0;;true\\	immob;c;V;R;\\\	piece;;;;ClassicMapPatchDebrecen/	Map\	1\\	\\\	null;0;0;5344;0</VASSAL.build.widget.PieceSlot>
                 </VASSAL.build.module.map.SetupStack>
             </VASSAL.build.module.folder.MapSubFolder>
             <VASSAL.build.module.folder.MapSubFolder desc="" name="At-Start Trenches">
@@ -2277,7 +2280,7 @@
                     <VASSAL.build.widget.PieceSlot entryName="AP Trench" gpid="2344" height="64" width="75">+/null/mark;NotForCampaign	prototype;Trench_AP\	piece;;;;AP Trench/Y	\	null;0;0;2344;0</VASSAL.build.widget.PieceSlot>
                 </VASSAL.build.module.map.SetupStack>
                 <VASSAL.build.module.map.SetupStack location="Maggiore" name="Maggiore Trench" owningBoard="Classic Map" useGridLocation="false" x="1767" y="1820">
-                    <VASSAL.build.widget.PieceSlot entryName="AP Trench" gpid="2346" height="64" width="75">+/null/prototype;Trench_AP	piece;;;;AP Trench/	null;0;0;2346;0</VASSAL.build.widget.PieceSlot>
+                    <VASSAL.build.widget.PieceSlot entryName="AP Trench" gpid="2346" height="64" width="75">+/null/mark;NotForCampaign	prototype;Trench_AP\	piece;;;;AP Trench/Y	\	null;0;0;2346;0</VASSAL.build.widget.PieceSlot>
                 </VASSAL.build.module.map.SetupStack>
                 <VASSAL.build.module.map.SetupStack location="Asiago" name="Asiago Trench" owningBoard="Classic Map" useGridLocation="false" x="1635" y="1841">
                     <VASSAL.build.widget.PieceSlot entryName="AP Trench" gpid="2348" height="64" width="75">+/null/mark;NotForCampaign	prototype;Trench_AP\	piece;;;;AP Trench/Y	\	null;0;0;2348;0</VASSAL.build.widget.PieceSlot>
